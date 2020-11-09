@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,30 +28,18 @@
 <div id="HEAD">
 <h2>Что купить на новый год?</h2> 
 </div>
-<h3>У тебя хороший финансовый доход ?</h3>
+<h1>Tвой выбор:</h1><?php  echo("<h1>Xbox Series S </h1>") ; 
+?> 
 <br>
 <br>
  <form action="" method="POST" >
-  <p>Да <input type="radio" name="money" value="1"></p>
-  <p>Нет <input type="radio" name="money" value="0"></p>
-  <br>
+  
  
-  <br>
+
   <input type="submit">  
  </form>	
 
-<img src='money.png' width='640' hight='500'>
-<?php 
-if (isset($_REQUEST['money']) and $_REQUEST['money']==1)
-{   
-   
-    header('Location: xbox.php');
-}
-if (isset($_REQUEST['money']) and $_REQUEST['money']==0)
-{   
-   
-    header('Location: xboxs.php');
-}
-?>
+<img src='xboxs_p.png' width='640' hight='500'>
+
 </body>
-</html> 
+</html>
