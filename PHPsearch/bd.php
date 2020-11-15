@@ -40,6 +40,8 @@ $result_data = $mysqli->query("SELECT * FROM  `articles`");
 
 print_data($result_data);
 
+
+//amount strings in Data base 
 if ($result = $mysqli->query("SELECT * FROM  `articles`")) {
     printf("В таблице %d строк.\n", $result->num_rows);
     $result->close();

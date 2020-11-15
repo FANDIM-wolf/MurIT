@@ -4,7 +4,7 @@
 	<title>TestSelect</title>
 </head>
 <body>
- 
+
 <form action="" method="post">
 <select  size='5' multiple name='test[]'>
         <option value="one">England</option>
@@ -13,20 +13,21 @@
         <option value="four">France</option>
         <option value="five">Portugese</option>
 </select>
-<input type="submit" value="Send" />
+<input type="submit"   />
 </form>
 
 
 <?PHP
         $test=$_POST['test'];
+
         if ($test){
-         foreach ($test as $t){
+           foreach ($test as $t){
 
             if ($t == "two"){
-            	echo "Belguim";
+            	  echo "Belguim";
             }
-         	echo 'You selected ',$t,'<br />';}
-        }
+         	  echo '<h3>You selected:</h3> ',$t,'<br />';}
+           }
 ?>
 
 </body>
